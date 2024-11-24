@@ -1,0 +1,47 @@
+@import "variaveis";
+
+header {
+    background-color: $corPrimaria;
+
+    a {
+        text-decoration: none;
+        
+        h2 {
+            color: $corSecundaria;
+            font-size: 20px;
+    
+            @media (max-width: 322px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+
+    .navbar-toggler .fas {
+        color: $corSecundaria;
+        border-color: $corSecundaria;
+        font-size: 20px;
+    }
+
+    .nav .nav-link {
+        color: #fff;
+        border-bottom: 2px solid transparent;
+        border-radius: 0;
+    }
+
+    .nav .nav-link:first-child {
+        @media ($mobile) {
+            margin-top: 8px;
+        }
+    }
+
+    .nav .nav-link:hover {
+        color: $corSecundaria;
+    }
+}
+
+.nav-pills .nav-link.active {
+    color: $corSecundaria;
+    background-color: transparent;
+    border-bottom: 2px solid $corSecundaria;
+}

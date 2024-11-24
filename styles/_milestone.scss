@@ -1,0 +1,19 @@
+@import "variaveis"; 
+
+.milestone {
+    margin-top: 60px;
+    padding: 60px 0;
+    background-color: darken($corDestaque, 10%);
+    border-radius: 8px;
+
+    .counter {
+        padding: 12px;
+
+        h2 {
+            letter-spacing: 2px;
+            font-weight: 500;
+            color: $corSecundaria;
+            transition: color .5s ease;
+        }
+    }
+}

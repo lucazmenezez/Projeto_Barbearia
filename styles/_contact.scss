@@ -1,0 +1,63 @@
+@import 'variaveis';
+
+#contact {
+    padding: 100px 0;
+    background-color: $corDestaque;
+
+    .container {
+        @media ($mobile) {
+            max-width: 90%;
+        }
+    }
+
+    h6 {
+        color: $corSecundaria;
+    }
+
+    h2 {
+        color: #fff;
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+
+    p {
+        max-width: 700px;
+        margin: 0 auto;
+
+        @media ($mobile) {
+            font-size: 14px;
+        }
+    }
+
+    .infos {
+        .title {
+            font-size: 28px;
+            font-weight: 500;
+
+            i {
+                color: $corSecundaria;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .prices {
+        .title {
+            font-size: 28px;
+            font-weight: 500;
+
+            i {
+                color: $corSecundaria;
+                margin-right: 8px;
+            }
+        }
+
+        @media ($mobile) {
+            margin-top: 40px;
+        }
+
+        @media ($tablet) {
+            margin-top: 40px;
+        }
+    }
+}

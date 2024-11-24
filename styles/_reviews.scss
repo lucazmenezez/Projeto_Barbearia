@@ -1,0 +1,56 @@
+@import 'variaveis';
+
+#reviews {
+    padding-top: 100px;
+    background-color: darken($corDestaque, 10%);
+    color: #fff;
+
+    .container {
+        @media ($mobile) {
+            max-width: 90%;
+        }
+    }
+
+    h6 {
+        color: $corSecundaria;
+    }
+    
+    h2 {
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+
+    p {
+        @media ($mobile) {
+            font-size: 14px;
+        }
+    }
+
+    .review {
+        padding: 32px;
+        border-radius: 8px;
+        background-color: lighten($corDestaque, 10%);
+
+        img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            border: 2px solid $corSecundaria;
+        }
+
+        .icon2 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+
+        @media ($mobile) {
+            margin-bottom: 32px;
+        }
+
+        @media ($tablet) {
+            margin-bottom: 32px;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+@import 'variaveis';
+
+.footer {
+    padding: 40px 0;
+    background-color: $corSecaoAbout;
+    color: #fff;
+
+    .container {
+        @media ($mobile) {
+            max-width: 90%;
+        }
+    }
+
+    .logo-footer {
+        font-size: 40px;
+        color: $corSecundaria;
+
+        @media ($mobile) {
+            margin-bottom: 16px;
+        }
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+
+    a {
+        color: #ccc;
+        text-decoration: none;
+    }
+
+    i {
+        color: $corSecundaria;
+        margin-right: 8px;
+    }
+
+    
+    &-top {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media ($mobile) {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .list-icons {
+        display: flex;
+        align-items: center;
+        margin: 0;
+
+        &-item {
+            font-size: 28px;
+            margin: 0 8px;
+            list-style: none;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+
+            a {
+                color: $corSecundaria;
+
+                i {
+                    margin: 0;
+                }
+            }
+        }
+
+        @media ($mobile) {
+            padding: 0;
+        }
+    }
+
+    .list-links {
+        &-item {
+            a {
+                transition: color .3s ease;
+
+                &:hover {
+                    color: $corSecundaria;
+                }
+            }
+        }
+    }
+
+    .list-services {
+        &-item {
+            a {
+                transition: color .3s ease;
+                
+                &:hover {
+                    color: $corSecundaria;
+                }
+            }
+        }
+    }
+
+    .list-infos {
+        padding: 0 0 0 8px;
+
+        &-item {
+            list-style: none;
+        }
+    }
+
+    .personal-website {
+        color: $corSecundaria;
+        transition: all .3s ease;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

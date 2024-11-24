@@ -1,0 +1,93 @@
+@import "variaveis"; 
+
+#about {
+    padding: 100px 0;
+    background-color: $corSecaoAbout;
+    color: #fff;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 25%;
+        height: 100%;
+        background-color: $corSecundaria;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+        position: relative;
+
+        @media ($mobile) {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        @media ($tablet) {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    h6 {
+        color: $corSecundaria;
+
+        @media ($mobile) {
+            text-align: center;
+            margin: 32px 0;
+        }
+
+        @media ($tablet) {
+            color: #fff;
+            text-align: center;
+            margin: 32px 0;
+        }
+    }
+
+    h2 {
+        margin-top: 16px;
+        margin-bottom: 24px;
+        letter-spacing: 1px;
+
+        @media ($mobile) {
+            text-align: center;
+        }
+
+        @media ($tablet) {
+            text-align: center;
+        }
+    }
+
+    p {
+        margin: 0;
+        @media ($mobile) {
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 18px;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        @media ($tablet) {
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 18px;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    .signature {
+        width: 100%;
+        display: block;
+    }
+}

@@ -1,0 +1,56 @@
+@import 'variaveis';
+
+#gallery {
+    padding: 100px 0;
+    background-color: $corPrimaria;
+
+    .container {
+        @media ($mobile) {
+            max-width: 90%;
+        }
+    }
+
+    h6 {
+        color: $corSecundaria;
+    }
+
+    h2 {
+        color: #fff;
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+
+    p {
+        max-width: 600px;
+        margin: 0 auto;
+
+        @media ($mobile) {
+            font-size: 14px;
+        }
+    }
+
+    .nav .nav-link {
+        color: #fff;
+        border: none;
+
+        &.active {
+            background-color: $corSecundaria;
+            color: $corPrimaria;
+        }
+    }
+
+    .nav-gallery {
+        display: flex;
+        flex-direction: column;
+
+        @media ($mobile) {
+            flex-direction: row;
+            margin-bottom: 32px;
+        }
+    }
+
+    img {
+        border-radius: 8px;
+        margin-bottom: 24px;
+    }
+}

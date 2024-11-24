@@ -1,0 +1,125 @@
+@import "styles/variaveis"; 
+@import "styles/header";
+@import "styles/hero";
+@import "styles/services";
+@import "styles/about";
+@import "styles/milestone";
+@import "styles/reviews";
+@import "styles/gallery";
+@import "styles/contact";
+@import "styles/footer";
+@import "styles/cta";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fonteTextos;
+    letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6,
+.btn {
+    font-family: $fontePrincipal;
+    letter-spacing: 1px;
+}
+
+.btn-brand {
+    color: #000;
+    background-color: $corSecundaria;
+    border: 2px solid $corSecundaria;
+    padding: 16px 30px;
+    transition: background-color .5s ease, color .5s ease;
+
+    &:hover {
+        color: #fff;
+        background-color: transparent;
+        border: 2px solid $corSecundaria;
+    }
+}
+
+.button-outline-brand {
+    background-color: transparent;
+    color: #fff;
+    padding: 16px 30px;
+    letter-spacing: 1px;
+    border: 2px solid $corSecundaria;
+    transition: background-color .5s ease, color .5s ease;
+
+    &:hover {
+        background-color: $corSecundaria;
+        color: #000;
+        border: 2px solid $corSecundaria;
+    }
+
+    @media ($tablet) {
+        margin-top: 24px;
+        display: block;
+    }
+
+    @media ($mobile) {
+        margin-top: 24px;
+        display: block;
+    }
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+
+    @media ($mobile) {
+        font-size: 32px;
+    }
+}
+
+.text {
+    color: #ccc;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.btn-wpp {
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 100;
+
+    img {
+        max-width: 74px;
+        transition: transform 0.4s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .tooltip-text {
+        visibility: hidden;
+        position: absolute;
+        width: 120px;
+        top: 8px;
+        left: -144px;
+        padding: 6px;
+        border-radius: 8px;
+        text-align: center;
+        background-color: $corSecaoAbout;
+        color: #fff;
+        opacity: 0;
+        transition: opacity .4s;
+    }
+
+    &:hover .tooltip-text {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media ($mobile) {
+    .btn-wpp img {
+        max-width: 64px;
+    }
+}
